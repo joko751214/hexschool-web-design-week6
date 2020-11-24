@@ -7,87 +7,99 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首頁</title>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo">
-      </a>
+  <nav class="navbar navbar-expand-md fixed-top px-0">
+    <div class="container px-md-0">
+      <div class="logo pl-3 pl-sm-0">
+        <h1><a href="#" class="text-decoration-none navbar-brand d-block">D'PERFUME</a></h1>
+      </div>
+      <ul class="navbar-nav ml-auto d-md-none">
+        <li class="nav-item">
+          <a href="#" class="nav-link position-relative">
+            <span class="material-icons align-top">
+              shopping_cart
+            </span>
+            <span class="badge badge-pill badge-danger">3</span>
+          </a>
+        </li>
+      </ul>
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="material-icons align-top d-none d-md-inline-block">
+                add_business
+              </span>
+              Product
+            </a>
+          </li>
+          <li class="nav-item order-2">
+            <a class="nav-link" href="#">
+              <span class="material-icons align-top d-none d-md-inline-block">
+                favorite
+              </span>
+              Wishlist
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-md-none" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-md-none" href="#">Contact</a>
+          </li>
+          <li class="nav-item order-1">
+            <a class="nav-link" href="#">
+              <span class="material-icons align-top d-none d-md-inline-block">
+                person
+              </span>
+              log in
+            </a>
+          </li>
+          <li class="nav-item order-3 d-none d-md-inline-block">
+            <a href="#" class="nav-link">
+              <span class="material-icons align-top">
+                shopping_cart
+              </span>
+              Cart(3)
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <ul class="menu">
-      <li><a href="product-op.html" class="font-md text-secondary noto-regular">系列鏡框</a></li>
-      <li><a href="location.html" class="font-md text-secondary noto-regular">門市據點</a></li>
-      <li><a href="blog.html" class="font-md text-secondary noto-regular">部落格</a></li>
-      <li><a href="faq.html" class="font-md text-secondary noto-regular">常見問題</a></li>
-    </ul>
-  </header>
+  </nav>
 
   
-<a href="#" class="btn btn-black">按鈕</a>
-<div class="text-black">文字</div>
 
-  <footer>
-    <div class="container">
-      <div class="footer-menu">
-        <ul class="footer-menu-list">
-          <li><a href="index.html" class="font-sm text-secondary noto-regular">首頁</a></li>
-          <li><a href="product-op.html" class="font-sm text-secondary noto-regular">系列鏡框</a></li>
-          <li><a href="location.html" class="font-sm text-secondary noto-regular">門市據點</a></li>
-          <li><a href="blog.html" class="font-sm text-secondary noto-regular">部落格</a></li>
-          <li><a href="faq.html" class="font-sm text-secondary noto-regular">常見問題</a></li>
-        </ul>
-        <ul class="footer-menu-icon">
-          <li>
-            <a href="#">
-              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt="footer-icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt="footer-icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt="footer-icon">
-            </a>
-          </li>
-        </ul>
-        <ul class="footer-menu-info">
-          <li>
-            <a href="#">
-              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="footer-icon">
-              <h2 class="text-secondary roboto-regular">0800-000-000</h2>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="footer-icon">
-              <h2 class="text-secondary roboto-regular">glasses@business.com</h2>
-            </a>
-          </li>
-        </ul>
+
+  <footer class="bg-primary py-4">
+    <div class="container d-flex justify-content-between px-sm-0">
+      <div class="logo d-flex align-items-center">
+        <h2><a href="#" class="text-decoration-none text-light d-block">D'PERFUME</a></h2>
+        <p class='mb-0 ml-4 text-light font-sm'>© 2020. All Rights Reserved.</p>
       </div>
-      <div class="footer-copyright">
-        <ul class="footer-copyright-text">
-          <li>
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo">
-          </li>
-          <li>
-            <p class="text-secondary font-sm">Copyright © 2020 Glasses.All rights reserved.</p>
-          </li>
-        </ul>
-        <ul class="footer-copyright-menu">
-          <li><a href="#" class="text-secondary noto-regular">隱私權政策</a></li>
-          <li><a href="#" class="text-secondary noto-regular">服務條款</a></li>
-        </ul>
-      </div>
+      <ul class="list-unstyled d-md-flex d-none align-items-center mb-0">
+        <li>
+          <a href="#" class="text-decoration-none text-light d-block">Product</a>
+        </li>
+        <li class='ml-5'>
+          <a href="#" class="text-decoration-none text-light">Blog</a>
+        </li>
+        <li class='ml-5'>
+          <a href="#" class="text-decoration-none text-light">Contact</a>
+        </li>
+      </ul>
     </div>
   </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
 </html>
