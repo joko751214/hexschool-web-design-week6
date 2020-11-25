@@ -8389,6 +8389,11 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0; }
+
 .logo a {
   width: 128px;
   height: 38px;
@@ -8397,29 +8402,58 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden; }
 
 body {
-  padding-top: 65px; }
+  padding-top: 62px; }
 
-nav .logo a {
-  background-image: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d’Perfume.png); }
-
-nav .nav-link {
-  color: #8D8D8D; }
-
-nav .badge {
-  font-size: 7px;
-  position: absolute;
-  top: 2px;
-  right: -5px; }
-
-@media (max-width: 767px) {
-  nav .navbar-collapse ul {
-    background-color: #707070; }
-  nav .navbar-collapse .nav-item {
-    border-top: 1px solid #fff; }
-  nav .navbar-collapse .nav-link {
-    color: #fff; } }
+nav {
+  background-color: #fff; }
+  nav .logo a {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d’Perfume.png); }
+  nav .nav-link {
+    color: #8D8D8D; }
+  nav .badge {
+    font-size: 7px;
+    position: absolute;
+    top: 2px;
+    right: -5px; }
+  @media (max-width: 767px) {
+    nav .navbar-collapse ul {
+      background-color: #707070; }
+    nav .navbar-collapse .nav-item {
+      border-top: 1px solid #fff; }
+    nav .navbar-collapse .nav-link {
+      color: #fff; } }
 
 footer .logo a {
   background-image: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d’Perfumewhite.png); }
+
+.rounded-button {
+  border-radius: 30px; }
+
+.banner {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index1.jpg) no-repeat center;
+  background-size: cover; }
+  .banner .container {
+    height: 840px; }
+    @media (max-width: 767px) {
+      .banner .container {
+        height: 480px; } }
+  .banner a {
+    border: 2px solid #fff; }
+    .banner a:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+
+.text a {
+  border: 2px solid #000; }
+  .text a:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+
+.showcase {
+  background-color: #E0E0E0;
+  padding: 40px 0; }
+
+.jumbotron {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index10.jpg) no-repeat center;
+  background-size: cover;
+  padding: 312px 0 112px; }
 
 /*# sourceMappingURL=all.css.map */
