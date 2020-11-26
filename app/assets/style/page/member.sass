@@ -1,0 +1,26 @@
+.list
+  a
+    color: #000
+    text-decoration: none
+    &:after
+      content: ''
+      display: block
+      opacity: 0
+      width: 0%
+      height: 2px
+      background-color: #916000
+      transition: width .5s 
+    &:hover
+      &:after
+        opacity: 1
+        width: 60%
+  li:nth-child(2)
+    a:hover
+      &:after 
+        width: 40%
+.info
+  color: #818A91
+  a
+    color: #818A91
+  td
+    color: #818A91

@@ -33,7 +33,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto text-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="products.html">
               <span class="material-icons align-top d-none d-md-inline-block">
                 add_business
               </span>
@@ -55,7 +55,7 @@
             <a class="nav-link d-md-none" href="#">Contact</a>
           </li>
           <li class="nav-item order-md-1">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="login.html">
               <span class="material-icons align-top d-none d-md-inline-block">
                 person
               </span>
@@ -74,9 +74,42 @@
       </div>
     </div>
   </nav>
+  <% if(current !== 'index') { %>
+    <header class="bg-primary d-none d-md-block">
+      <div class="container px-md-0">
+        <ul class="d-flex">
+          <li><a href="#" class="text-white d-block py-3 mr-4">CHANEL</a></li>
+          <li><a href="#" class="text-white d-block py-3 mr-4">Jo Malone</a></li>
+          <li><a href="#" class="text-white d-block py-3 mr-4">Curology</a></li>
+          <li><a href="#" class="text-white d-block py-3 mr-4">Dior</a></li>
+          <li><a href="#" class="text-white d-block py-3 mr-4">Chloe</a></li>
+          <li><a href="#" class="text-white d-block py-3 mr-4">ZARA</a></li>
+        </ul>
+      </div>
+    </header>
+  <% } %>
 
   <%- contents %>
 
+  <% if(current === 'index' || current === 'products') { %>
+    <div class="jumbotron jumbotron-fluid mb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="subscribe">
+              <h2 class="mb-4">記得<br/>訂閱以獲取更多資訊！</h2>
+              <div class="input-group">
+                <input type="text" class="form-control border-primary" placeholder="Your email address" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <div class="input-group-prepend">
+                  <button class="btn btn-primary" type="button" id="button-addon1">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% } %>
   <footer class="bg-primary py-4">
     <div class="container d-flex justify-content-between px-sm-0">
       <div class="logo d-flex align-items-center">
@@ -85,7 +118,7 @@
       </div>
       <ul class="d-md-flex d-none align-items-center mb-0">
         <li>
-          <a href="#" class="text-decoration-none text-light d-block">Product</a>
+          <a href="products.html" class="text-decoration-none text-light d-block">Product</a>
         </li>
         <li class='ml-5'>
           <a href="#" class="text-decoration-none text-light">Blog</a>
