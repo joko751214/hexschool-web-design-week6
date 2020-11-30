@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>產品列表</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md fixed-top px-0">
+    <div class="container px-md-0">
+      <div class="logo pl-3 pl-sm-0">
+        <h1><a href="index.html" class="text-decoration-none navbar-brand d-block">D'PERFUME</a></h1>
+      </div>
+      <ul class="navbar-nav ml-auto d-md-none">
+        <li class="nav-item">
+          <a href="#" class="nav-link position-relative">
+            <span class="material-icons align-top">
+              shopping_cart
+            </span>
+            <span class="badge badge-pill badge-danger">3</span>
+          </a>
+        </li>
+      </ul>
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">
+              <span class="material-icons align-top d-none d-md-inline-block">
+                add_business
+              </span>
+              Product
+            </a>
+          </li>
+          <li class="nav-item order-md-2">
+            <a class="nav-link" href="#">
+              <span class="material-icons align-top d-none d-md-inline-block">
+                favorite
+              </span>
+              Wishlist
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-md-none" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-md-none" href="#">Contact</a>
+          </li>
+          <li class="nav-item order-md-1">
+            <a class="nav-link" href="login.html">
+              <span class="material-icons align-top d-none d-md-inline-block">
+                person
+              </span>
+              log in
+            </a>
+          </li>
+          <li class="nav-item order-md-3 d-none d-md-inline-block">
+            <a href="#" class="nav-link">
+              <span class="material-icons align-top">
+                shopping_cart
+              </span>
+              Cart(3)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <header class="bg-primary d-none d-md-block">
+      <div class="container px-md-0">
+        <ul class="d-flex">
+          <li><a href="#" class="text-white d-block py-3 mr-4">CHANEL</a></li>
+          <li><a href="#" class="text-white d-block py-3 mr-4">Jo Malone</a></li>
+          <li><a href="#" class="text-white d-block py-3 mr-4">Curology</a></li>
+          <li><a href="#" class="text-white d-block py-3 mr-4">Dior</a></li>
+          <li><a href="#" class="text-white d-block py-3 mr-4">Chloe</a></li>
+          <li><a href="#" class="text-white d-block py-3 mr-4">ZARA</a></li>
+        </ul>
+      </div>
+    </header>
+  
+
+  
+<div class="container py-5">
+  <div class="row position-relative">
+    <div class="col-12 col-md-8 mb-3 mb-md-4">
+      <img class="img-fluid" src="./assets/images/product1.jpg" alt="product-image">
+    </div>
+    <div class="col-12 col-md-4 description">
+      <ul>
+        <li class="mb-5">
+          <h2>CHANEL N°5</h2>
+          <p class="h5 mb-4">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+          <p class="h5 mb-3">NT$4,980</p>
+          <div class="d-flex mb-2">
+            <select class="col-5 custom-select border-primary rounded-0" id="inlineFormCustomSelect">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <button type="button" class="col-7 btn btn-primary rounded-0" data-toggle="modal" data-target="#addToCart">加入購物車</button>
+            <!-- Cart Modal -->
+            <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-primary text-center h5 py-3">
+                  已加入購物車
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn" data-toggle="modal" data-target="#addToTrack">
+            <span class="material-icons align-top text-primary">
+              favorite
+            </span>
+            加入我的收藏
+          </button>
+          <!-- favorite Modal -->
+          <div class="row">
+            <div class="col-8 col-md-6">
+              <div class="modal fade" id="addToTrack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content text-primary text-center h5 py-3">
+                    已加入我的收藏
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="pt-0 pt-md-4 mb-4">
+          <h3 class="mb-2">商品購買須知</h3>
+          <p>產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。<br/> 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。<br/>D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</p>
+        </li>
+        <li class="mb-5">
+          <h3 class="mb-2">退換貨須知</h3>
+          <p>依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-8">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-3 mb-md-4"><img class="img-fluid" src="./assets/images/product2.jpg" alt="product-image"></div>
+        <div class="col-12 col-md-6 mb-3 mb-md-4"><img class="img-fluid" src="./assets/images/product3.jpg" alt="product-image"></div>
+      </div>
+      <img class="img-fluid" src="./assets/images/product1.jpg" alt="product-image">
+    </div>
+  </div>
+</div>
+
+  
+  <footer class="bg-primary py-4">
+    <div class="container d-flex justify-content-between px-sm-0">
+      <div class="logo d-flex align-items-center">
+        <h2><a href="index.html" class="text-decoration-none text-light d-block">D'PERFUME</a></h2>
+        <p class='mb-0 ml-4 text-light font-sm'>© 2020. All Rights Reserved.</p>
+      </div>
+      <ul class="d-md-flex d-none align-items-center mb-0">
+        <li>
+          <a href="products.html" class="text-decoration-none text-light d-block">Product</a>
+        </li>
+        <li class='ml-5'>
+          <a href="#" class="text-decoration-none text-light">Blog</a>
+        </li>
+        <li class='ml-5'>
+          <a href="#" class="text-decoration-none text-light">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>

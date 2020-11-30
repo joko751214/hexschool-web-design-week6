@@ -15,7 +15,7 @@
   font-size: 1rem;
   line-height: 24px; }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) {
   .font-xl {
     font-size: 3rem;
     line-height: 72px; }
@@ -8423,6 +8423,11 @@ nav {
     nav .navbar-collapse .nav-link {
       color: #fff; } }
 
+.jumbotron {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index10.jpg) no-repeat center;
+  background-size: cover;
+  padding: 312px 0 112px; }
+
 footer .logo a {
   background-image: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d’Perfumewhite.png); }
 
@@ -8442,18 +8447,54 @@ footer .logo a {
     .banner a:hover {
       background-color: rgba(255, 255, 255, 0.3); }
 
-.text a {
+ul.text a {
   border: 2px solid #000; }
-  .text a:hover {
+  ul.text a:hover {
     background-color: rgba(0, 0, 0, 0.1); }
 
 .showcase {
   background-color: #E0E0E0;
   padding: 40px 0; }
 
-.jumbotron {
-  background: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index10.jpg) no-repeat center;
-  background-size: cover;
-  padding: 312px 0 112px; }
+.darker {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5); }
+
+.status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff; }
+
+@media (min-width: 768px) {
+  .description {
+    position: absolute;
+    right: 0; } }
+
+.list a {
+  color: #000;
+  text-decoration: none; }
+  .list a:after {
+    content: '';
+    display: block;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #916000;
+    -webkit-transition: width .5s;
+    -o-transition: width .5s;
+    transition: width .5s; }
+  .list a:hover:after {
+    opacity: 1;
+    width: 100%; }
+
+.info {
+  color: #818A91; }
+  .info a {
+    color: #818A91; }
+  .info td {
+    color: #818A91; }
 
 /*# sourceMappingURL=all.css.map */
