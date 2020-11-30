@@ -5,71 +5,71 @@ engine: ejs
 current: member
 ---
 
-<div class="container info py-5 px-0">
-  <div class="row mt-4">
+<div class="container info py-5">
+  <div class="row mt-4 mb-0">
     <div class="col-12 col-md-2">
-      <h2 class="h5 mb-4">會員中心</h2>
-      <ul class="list">
+      <h2 class="h5 mb-4 d-none d-md-block">會員中心</h2>
+      <ul class="list d-flex d-md-block justify-content-between">
         <li class="mb-4">
-          <a href="#">會員資料修改</a>
+          <a href="#" class="d-block d-md-inline-block">會員資料修改</a>
         </li>
         <li class="mb-4">
-          <a href="#">訂單查詢</a>
+          <a href="#" class="d-block d-md-inline-block">訂單查詢</a>
         </li>
         <li class="mb-4">
-          <a href="#">退／換貨申請</a>
+          <a href="#" class="d-block d-md-inline-block">退／換貨申請</a>
         </li>
       </ul>
     </div>
-    <div class="col-12 col-md-7 mb-5">
+    <div class="col-12 col-md-7 mb-md-5 order-2 order-md-1">
       <h2 class="h6 py-2 mb-3 text-dark font-weight-bold border-bottom">個人資料修改</h2>
-      <form>
-        <div class="form-group row align-items-center">
-          <label class="col-md-2 col-form-label">會員帳號</label>
-          <div class="col-md-7">email@example.com</div>
+      <form class="mb-5 mb-mb-0">
+        <div class="form-group row no-gutters align-items-center">
+          <label class="col-3 col-md-2 col-form-label">會員帳號</label>
+          <div class="col-9 col-md-7">email@example.com</div>
         </div>
-        <div class="form-group row">
-          <label for="name" class="col-md-2 col-form-label">會員姓名</label>
-          <div class="col-md-7">
+        <div class="form-group row no-gutters">
+          <label for="name" class="col-3 col-md-2 col-form-label">會員姓名</label>
+          <div class="col-9 col-md-7">
             <input type="text" class="form-control" id="name">
           </div>
         </div>
-        <div class="form-group row">
-          <label for="gender" class="col-md-2 col-form-label">會員性別</label>
-          <div class="col-md-2">
+        <div class="form-group row no-gutters">
+          <label for="gender" class="col-3 col-md-2 col-form-label">會員性別</label>
+          <div class="col-3 col-md-2">
             <select class="form-control" id="gender">
               <option value='0'>男</option>
               <option value='1'>女</option>
             </select>
           </div>
         </div>
-        <div class="form-group row">
-          <label for="mail" class="col-md-2 col-form-label">電子信箱</label>
-          <div class="col-md-7">
+        <div class="form-group row no-gutters">
+          <label for="mail" class="col-3 col-md-2 col-form-label">電子信箱</label>
+          <div class="col-9 col-md-7">
             <input type="email" class="form-control" id="mail" placeholder="email@example.com">
           </div>
         </div>
-        <div class="form-group row">
-          <label for="tel" class="col-md-2 col-form-label">手機號碼</label>
-          <div class="col-md-7">
+        <div class="form-group row no-gutters">
+          <label for="tel" class="col-3 col-md-2 col-form-label">手機號碼</label>
+          <div class="col-9 col-md-7">
             <input type="tel" class="form-control" id="tel">
           </div>
         </div>
-        <div class="form-group row">
-          <label for="contact-address" class="col-md-2 col-form-label">聯絡地址</label>
-          <div class="col-md-7">
-            <select class="form-control mb-3 col-6">
+        <div class="form-group row no-gutters">
+          <label for="contact-address" class="col-3 col-md-2 col-form-label">聯絡地址</label>
+          <div class="col-9 col-md-7">
+            <select class="form-control mb-3 col-8 col-md-6">
               <option value="0">台灣及離島</option>
               <option value="1">台灣及離島</option>
             </select>
             <div class="form-row">
-              <div class="form-group col-6">
+              <div class="form-group col-4 col-md-6">
                 <select class="form-control">
                   <option value="0">高雄市</option>
                   <option value="1">台北市</option>
                 </select>
               </div>
-              <div class="form-group col-6">
+              <div class="form-group col-4 col-md-6">
                 <select class="form-control">
                   <option value="0">鹽埕區</option>
                   <option value="1">內湖區</option>
@@ -89,21 +89,21 @@ current: member
             </div>
           </div>
         </div>
-        <div class="form-group row">
-          <label for="delivery-address" class="col-md-2 col-form-label">配送地址</label>
-          <div class="col-md-7">
-            <select class="form-control mb-3 col-6">
+        <div class="form-group row no-gutters">
+          <label for="delivery-address" class="col-3 col-md-2 col-form-label">配送地址</label>
+          <div class="col-9 col-md-7">
+            <select class="form-control mb-3 col-8 col-md-6">
               <option value="0">台灣及離島</option>
               <option value="1">台灣及離島</option>
             </select>
             <div class="form-row">
-              <div class="form-group col-6">
+              <div class="form-group col-4 col-md-6">
                 <select class="form-control">
                   <option value="0">高雄市</option>
                   <option value="1">台北市</option>
                 </select>
               </div>
-              <div class="form-group col-6">
+              <div class="form-group col-4 col-md-6">
                 <select class="form-control">
                   <option value="0">鹽埕區</option>
                   <option value="1">內湖區</option>
@@ -112,7 +112,7 @@ current: member
               <div class="col-12">
                 <input type="text" class="form-control" id="delivery-address" placeholder="請輸入地址">
               </div>
-              <div class="col-6">
+              <div class="col-8 col-md-6">
                 <button type="submit" class="btn btn-primary py-2 px-5 mt-3">確定修改</button>
               </div>
             </div>
@@ -121,57 +121,92 @@ current: member
       </form>
       <h2 class="h6 py-2 mb-3 text-dark font-weight-bold border-bottom">修改密碼</h2>
       <form>
-        <div class="form-group row">
-          <label for="password" class="col-md-2 col-form-label">舊密碼</label>
-          <div class="col-md-7">
+        <div class="form-group row no-gutters">
+          <label for="password" class="col-3 col-md-2 col-form-label">舊密碼</label>
+          <div class="col-9 col-md-7">
             <input type="password" class="form-control" id="password">
           </div>
         </div>
-        <div class="form-group row">
-          <label for="new-password" class="col-md-2 col-form-label">新密碼</label>
-          <div class="col-md-7">
+        <div class="form-group row no-gutters">
+          <label for="new-password" class="col-3 col-md-2 col-form-label">新密碼</label>
+          <div class="col-9 col-md-7">
             <input type="password" class="form-control" id="new-password">
           </div>
         </div>
-        <div class="form-group row">
-          <label for="check-password" class="col-md-2 col-form-label">確認密碼</label>
-          <div class="col-md-7">
+        <div class="form-group row no-gutters">
+          <label for="check-password" class="col-3 col-md-2 col-form-label">確認密碼</label>
+          <div class="col-9 col-md-7">
             <input type="password" class="form-control" id="check-password">
+            <div class="form-row">
+              <div class="col-8 col-md-6">
+                <button type="submit" class="btn btn-primary py-2 px-5 mt-3">變更密碼</button>
+              </div>
+            </div>
           </div>
         </div>
       </form>
     </div>
-    <div class="col-12 col-md-3">
-      <h2 class="h6">
-        <span class="material-icons align-top d-none d-md-inline-block">
+    <div class="col-12 col-md-3 order-1 mb-5 mb-md-0">
+      <h2 class="h6 mb-4">
+        <span class="material-icons align-top d-md-inline-block">
           person
         </span>
         會員編碼
         <span class="h5 ml-2">T00020080615</span>
       </h2>
-      <table class="table table-borderless mt-4 mb-0">
-        <tr>
-          <td>購物車</td>
-          <td>56</td>
-        </tr>
-        <tr>
-          <td>我的收藏</td>
-          <td>23</td>
-        </tr>
-        <tr>
-          <td>完成訂單</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td>會員紅利</td>
-          <td>2680</td>
-        </tr>
-        <tr>
-          <td class="pb-0">邀請碼</td>
-          <td class="pb-0">TK2075</td>
-        </tr>
-      </table>
-      <small class="pl-3 text-muted">新戶輸入邀請碼即可獲贈紅利點數1000點</small>
+      <ul class="list-unstyled">
+        <li class="mb-3">
+          <div class="row no-gutters">
+            <div class="col-3 col-md-4">
+              購物車
+            </div>
+            <div class="col-9 col-md-8">
+              56
+            </div>
+          </div>
+        </li>
+        <li class="mb-3"> 
+          <div class="row no-gutters">
+            <div class="col-3 col-md-4">
+              我的蒐藏
+            </div>
+            <div class="col-9 col-md-8">
+              23
+            </div>
+          </div>
+        </li>
+        <li class="mb-3">
+          <div class="row no-gutters">
+            <div class="col-3 col-md-4">
+              完成訂單
+            </div>
+            <div class="col-9 col-md-8">
+              8
+            </div>
+          </div>
+        </li>
+        <li class="mb-3">
+          <div class="row no-gutters">
+            <div class="col-3 col-md-4">
+              會員紅利
+            </div>
+            <div class="col-9 col-md-8">
+              2680
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row no-gutters">
+            <div class="col-3 col-md-4">
+              邀請碼
+            </div>
+            <div class="col-9 col-md-8">
+              TK2075
+            </div>
+          </div>
+        </li>
+      </ul>
+      <small class="text-muted">新戶輸入邀請碼即可獲贈紅利點數1000點</small>
     </div>
   </div>
 </div>
